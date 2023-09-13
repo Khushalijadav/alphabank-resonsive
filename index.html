@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { 
+  box-sizing: border-box ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header { font-size: 23px;
+          overflow: hidden;
+          background-color: white;
+          padding: 20px 10px;
+          padding-left: 90px;
+          border-bottom: #00008B;
+      
+}
+
+.header a { 
+  float: left;
+  color: black;
+  text-align: center;
+  padding-right: 90px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  padding-left: 12px;
+}
+.header-right { padding-left: 90px;
+  padding-top: 23px;
+  float: right;
+  word-spacing: 8px;
+  
+}
+.img1{ height: 20px;
+      padding-right: 12PX;
+      font-family: 'Courier New', Courier, monospace;
+}
+img{height: 20PX;
+    padding-left:9px ;
+    
+}
+.column {  font-family: 'Times New Roman', Times, serif;
+          float: left;
+          width: 50%;
+          padding: 80px;
+          height: 300px; 
+          margin-top: 1px;
+  }
+    .column1 { font-family: 'Times New Roman', Times, serif;
+          float: right;
+          width: 50%;
+          padding-top: 53px;
+          
+          height: 300px; 
+          padding-right: 100px;
+        }
+
+.row:after {
+            display: table;
+            clear: both;
+           }
+.btn{padding:  1px 20px;
+    
+     text-align: left;
+     border-radius: 12px;
+     background-color: #f1f1f1;
+     height: 68px;
+     width: 805px; 
+     border: none;
+    
+     font-size: 14px;
+     border-spacing: 12px;
+     font-display: 22px;
+     
+}
+
+.flex-container {
+                  font-size: 14px;
+                 display: flex;
+                 text-align: center;
+              }
+.name{  text-align: left;
+       border-radius: 12px;
+       background-color: lightgray;
+       font-size: 14px;
+     }
+select{ background-color: hsl(0, 0%, 95%);
+        border-radius: 12PX;
+        height: 68PX;
+        width: 800PX;
+        border: none;
+        font-size: 14px;
+        padding: 10px 20px;
+       }
+.bold{font-weight: bolder;}
+    .c1{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;  
+        color:black;
+     }
+     .c2{ color: black;
+      font-size: 14px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+      
+     }
+   .selectbox{ border: 8px;
+              height: 68px;
+              width: 90px;
+              font-size: 14px;  }
+
+   .name{ height: 68px;
+          width: 339px;
+         border-radius: 8px;
+         background-color: #f1f1f1;
+         border: none;
+         font-size: 14px;
+         padding: 10px 20px;
+         margin-right: 22px;
+         display: relative;
+         flex-wrap: wrap;
+          }
+
+   .flex-container2{ font-size: 14px;
+                 display: flex;
+                 text-align: center;}
+
+   .s1{ border-radius: 8px;
+        padding-right: 230px;
+        width: 90px;
+        border: 1px solid black;
+        padding : 20px;
+        background-color: white;
+        font-size: 23px;}
+
+.s2{ border-radius: 8px;
+     padding: 20px;
+     border: 1px black;
+     background-color: #00008B;
+     font-size: 23px;
+     color: white;}
+
+.btn:hover,select:hover,.name:hover{border: 3px solid blue}
+
+.h1{padding-top:5vw;
+    padding-left:7vw;}
+
+.info{padding-left: 12px;
+     padding-bottom: 155px;
+     padding-top: 2px;}
+
+.info1{ padding-left: 12px;}
+
+.b1{border-radius: 50%;
+  background-color: blue;}
+
+.b2{border-radius: 50%;
+  background-color: #f1f1f1;}
+
+.foote{ padding-right: 34px;
+    display: inline;
+    margin: 10px; }
+
+.foote-1{ margin-right: 250px;}
+
+.foote2{padding: 12px;}
+
+.letter{padding-block: 0px;
+        padding-left: 12px;}
+
+.s1:hover{border-color: cornflowerblue;}
+
+.s2:hover{ border-color: black;}
+ /*for laptop screen*/
+ @media (max-width:600px) {
+
+  .h1{text-align: center;
+      padding-right: 85px;
+      font-size: 10VW;
+  }
+  .column{padding: 2vw 3vw;}
+  .c1{font-size: 6vh; 
+      padding-left: 2vw;}
+  .c2{font-size: 4vh;
+      padding-left: 2vw;}
+  .column1{padding: 2vw 4vh;
+          width: 2vh;}
+  .btn{width: 500px;}
+  .name{width: 186px;}
+  .select{width: 500px;}
+  .div2{margin-top: 150px;}
+  .foote-1{text-align: left;}
+          
+      
+
+ }
+    
+    
+
+    
+ 
+
+                    
+    </style>
+</head> 
+
+<body>
+    <div class="header">
+                        <a href="#defult" class="logo"><h1><img src="/download.jpeg" class="img">&nbsp;&nbsp; &nbsp;Alphabank</h1></a>
+                        <div class="header-right">
+                          <a class="active" href="#About"><button class="b1">1</button> About you </a>
+                          <a href="#Billing infomation"><button class="b2">2</button> Billing infomation</a>
+                          <a href="#Get started"><button class="b2">3</button> Get started</a>
+
+                        </div>
+    </div><hr class="clor">
+    <h1 class="h1">About you</h1>
+   <div class="row">
+    <div class="column"  >
+     
+
+      <div class="info">
+      <p class="c1"><b>personal info</b></p>
+      <p class="c2">provide your personal info</p>
+    </div><br>
+      <div class="info1">
+      <p class="c1"><b>Professional info</b></p>
+      <p class="c2">provide your Professional info</p>
+    </div>
+  </div>
+
+      <br><br>
+    <div class="column1" >
+          <div >
+            <div class="btn"><p>organaztion</p><p ><strong>Finotry</strong></p>
+       </div> <br><br>
+      <div class="flex-container">
+           <div class="selectWrapper" >
+            
+             <select class="selectbox" id="title" name="title">
+                <option class="bold">MS</option>
+                <option class="bold">Mr</option>
+             </select>
+           </div>&nbsp;&nbsp;
+           <div> <button class="name">First name*</p><p><strong>Diana</strong></p></button></div>
+            <div> <button class="name">Last name*</p><p><strong>Diana</strong></p></button></div>
+          </div><br><br><br>
+          <div class="row">
+         <div class="div2"> 
+                     <select class="select"></title>
+                                      <option class="bold"> German,English</option>
+                                       <option class="bold">English</option>
+                      </select>
+          </div><br><br>
+          <div>
+              <select class="select">
+                                    <option class="bold"> freelancer</option>
+                                    <option class="bold">Devloper</option>
+              </select>
+          </div> <br><br>
+              <div class="btn"><p><b>Profession</b></p><p >ui/ux Des|</p>
+              
+              </div><br><br>
+                  <div>
+                     <select class="select">
+                                      <option class="bold"> Proficiency level</option>
+                                      <option class="bold">1%</option> 
+                                      <option class="bold">2%</option>
+                     </select><br><br><br><br><br><br>
+                     <div class="flex-container2">
+                          <div class="foote-1">  <p>*This field is mandatory</p></div>
+                      <div class="foote2"> <button class="s1"><b>Skip</b></button>
+                       <div class="foote"> <button class="s2"><b>save & continue</b></button></div>
+                     </div>
+                  </div>
+             </div> 
+            </div>
+</body>
