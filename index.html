@@ -29,10 +29,10 @@
   border-radius: 4px;
   padding-left: 12px;
 }
-.header-right { padding-left: 90px;
-  padding-top: 23px;
+.header-right { padding-left: 9vw;
+  padding-top: 2vw;
   float: right;
-  word-spacing: 8px;
+  word-spacing: 0.1vw;
   
 }
 .img1{ height: 20px;
@@ -174,14 +174,18 @@ select{ background-color: hsl(0, 0%, 95%);
 
 .s2:hover{ border-color: black;}
  /*for laptop screen*/
- @media (max-width:600px) {
+ @media (max-width:600px) {.header-right{display: column;
+                                         font-size: 1200px;
+                                         column-gap: 1vw;
+                                         margin-left: 12vw;
+                                         column-gap: 12px;}
 
   .h1{text-align: center;
       padding-right: 85px;
       font-size: 10VW;
   }
   .column{padding: 2vw 3vw;}
-  .c1{font-size: 6vh; 
+  .c1{font-size: 6vw; 
       padding-left: 2vw;}
   .c2{font-size: 4vh;
       padding-left: 2vw;}
@@ -191,11 +195,62 @@ select{ background-color: hsl(0, 0%, 95%);
   .name{width: 186px;}
   .select{width: 500px;}
   .div2{margin-top: 150px;}
-  .foote-1{text-align: left;}
+  .flex-container2{display: flex;}
+  .foote-1{font-size: 12px;}  
+  .foote2{padding-left: 1px ;
+          box-sizing: 12vh;}  }   
+      /*for tablet*/
+      @media  (min-width: 600px) and (max-width: 1024px){ 
+        .header{text-align: center; }
+        .header-right{font-size: 120px;
+                    
+                      display: flex;
+                      margin-left: 300px; 
+                      word-spacing: 12px;
+                      }
+        .active{row-gap: 12vw;}
+        .logo{text-align: center;
+              font-size: 12vw;
+              text-align: left;}
+                
+        
+  .h1{text-align: left;
+      padding-left: 300px;
+      font-size: 7vW;}
+      
+  
+  .column{padding: 8vw 5vw;}
+  .c1{font-size: 6vw; 
+      padding-left: 3vw;}
+   .c2{font-size: 4vh;
+      padding-left: 2vw;}
+    .btn{width: 400px;}
+    .name{width: 140px;}
+    .column1{padding: 8vw 2vh;}
+    .select{width: 400px;
+           margin-bottom: 12px;}
+    .div2{margin-top: 28vw;}
+    .flex-container2{text-align: left;display: flex;}
+    .foote-1{padding-inline-start:1px;}
+    .foote2{padding-inline-start: .40px; height: 1px; width: 2vw;}
+    .foote{padding-inline-start: 1px; min-height: 10px;}}
+
+
+    /*for laptop screen*/
+    @media (max-width:1024px) { 
+                                    .header-right{display: flex;
+                                               text-align: left;}
+                                    .flex-container2{display: inline;}
+                                
+                                  
+      
+    }
           
+
+        
       
 
- }
+ 
     
     
 
@@ -211,8 +266,8 @@ select{ background-color: hsl(0, 0%, 95%);
                         <a href="#defult" class="logo"><h1><img src="/download.jpeg" class="img">&nbsp;&nbsp; &nbsp;Alphabank</h1></a>
                         <div class="header-right">
                           <a class="active" href="#About"><button class="b1">1</button> About you </a>
-                          <a href="#Billing infomation"><button class="b2">2</button> Billing infomation</a>
-                          <a href="#Get started"><button class="b2">3</button> Get started</a>
+                          <a class="active" href="#Billing infomation"><button class="b2">2</button> Billing infomation</a>
+                          <a class="active" href="#Get started"><button class="b2">3</button> Get started</a>
 
                         </div>
     </div><hr class="clor">
